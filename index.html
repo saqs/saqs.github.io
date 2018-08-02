@@ -6,6 +6,17 @@
 		<link rel="shortcut icon" type="image/x-icon" href="newlogo.png"/>
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script>
+			$(window).on('scroll', function()){
+				if($(window).scrollTop()){
+					$('nav').addClass('black');
+				}
+				else{
+					$('nav').removeClass('black');
+				}
+			}
+		</script>
 
 
 	</head>
@@ -21,9 +32,9 @@
 				</ul>
 			</nav>
 			<section class="sec1"></section>
-			<!--section class="content">
+			<section class="content">
 				<p>Dummy text dummy hi</p>
-			</section-->
+			</section>
 		</div>
 		
 
