@@ -15,18 +15,7 @@ nav{
 	padding: 33px 100px;
 	box-sizing: border-box;
 	transition: .3s;
-}
-
-nav.logo{
-	padding-top: 22px 20px;
-	height: 80px;
-	float: left;
-	font-size: 24px;
-	transition: .3s;
-}
-
-nav.black.logo{
-	color: #fff;
+	text-align: center;
 }
 
 nav ul{
@@ -35,6 +24,7 @@ nav ul{
 	margin: 0;
 	padding: 0;
 	display: flex;
+	flex-wrap: nowrap;
 }
 
 nav ul li{
@@ -43,7 +33,8 @@ nav ul li{
 
 nav ul li a {
 	color: #fff;
-	padding: 12px 30px;
+	padding: 12px 20px;
+	margin: 10px;
 	font-size: 25px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -89,11 +80,29 @@ section.sec1 p{
 section.content{
 	width: 100%;
 	height: 100vh;
-	color: white;
-	background-color: aqua;
+	color: black;
+	background-color: #ffd600;
 	background-size: cover;
 	background-position: center;
 	text-align: center;
+}
+
+section.content h1{
+	font-size: 100px;
+	padding-top: 250px;
+	margin: 0;
+}
+
+section.content ul{
+	list-style-position: inside;
+	font-size: 45px;
+	text-align: left;
+	padding-left: 40%;
+}
+
+section.content ul li a{
+	color: #2993ff;
+	text-decoration: underline;
 }
 
 .content p{
@@ -106,4 +115,12 @@ section.content{
 .logo{
 	color: #fff;
 	font-size: 25px;
+}
+
+#title{
+	margin-right: 13em;
+}
+
+#title:hover{
+	background-color: transparent;
 }
