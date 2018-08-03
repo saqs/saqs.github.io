@@ -85,7 +85,7 @@ section.content{
 
 section.content h1{
 	font-size: 100px;
-	padding-top: 250px;
+	padding-top: 35vh;
 	margin: 0;
 }
 
@@ -103,7 +103,7 @@ section.content ul li a{
 }
 
 #title{
-	margin-right: 13em;
+	margin-right: 25vw;
 }
 
 #title:hover{
@@ -273,8 +273,8 @@ section.content ul li a{
 
 }
 
-/* Big tablet */
-@media (min-width: 1024px) and (max-width: 1422px){
+/* Big tablet 1 */
+@media (min-width: 1024px) and (max-width: 1200px){
 	nav ul{
 		margin: 0;
 		padding: 0;
@@ -304,11 +304,47 @@ section.content ul li a{
 		transform: translate(-5%, -125%);
 	}
 
+	section.sec1 h1{
+		font-size: 9vw;
+		padding-top: 22vh;
+		padding-bottom: 1%;
+		margin: 0;
+	}
+
+	section.sec1 p{
+		font-size: 4vw;
+		width: 75%;
+		padding: 0px 12%;
+	}
+
 	section.content{
 		height: 93vh;
 	}
 
 	section.content h1{
-		padding-top: 300px;
+		font-size: 12vw;
+		padding-top: 200px;
+	}
+
+	section.content ul{
+		font-size: 5.5vw;
+		transform: translate(-5vw, -5vh);
+	}
+}
+
+/* Big tablet 2 */
+@media (min-width: 1200px) and (max-width: 1380px){
+	#title{
+  		line-height: 0;
+  		color: #000;
+	}
+
+	#title::after{
+		content: "SAQS - Speed and Quality Software";
+		color: #fff;
+		font-size: 2.7vw;
+		line-height: initial;
+		display: block;
+		transform: translate(-5%, -100%);
 	}
 }
