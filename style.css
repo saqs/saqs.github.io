@@ -94,6 +94,7 @@ section.content ul{
 	font-size: 45px;
 	text-align: left;
 	padding-left: 40%;
+	transform: translateY(-20%);
 }
 
 section.content ul li a{
@@ -109,8 +110,8 @@ section.content ul li a{
 	background-color: transparent;
 }
 
+/* Normal phone */
 @media screen and (max-width: 480px) {
-
 	nav{
 		height: 10vh;
 		padding: 2vh 5vh;
@@ -144,7 +145,7 @@ section.content ul li a{
 		font-size: 4.5vw;
 		line-height: initial;
 		display: block;
-		transform: translate(35%, -85%);
+		transform: translate(42%, -85%);
 	}
 
 	section.sec1{
@@ -199,20 +200,115 @@ section.content ul li a{
 
 }
 
+/* XS phone */
 @media screen and (max-height: 570px){
 	#title::after{
-		transform: translate(35%, -110%);
+		transform: translate(43%, -110%);
 	}
 }
 
+/* Small phone */
 @media (min-height: 570px) and (max-height: 670px){
 	#title::after{
-		transform: translate(35%, -95%);
+		transform: translate(43%, -95%);
 	}
 }
 
+/* Big phone */
 @media (max-width: 420px) and (min-height: 800px){
 	#title::after{
-		transform: translate(40%, -85%);
+		transform: translate(47%, -85%);
+	}
+}
+
+/* Small tablet */
+@media (min-width: 750px) and (max-width: 1024px) and (min-height: 1024px){
+	nav{
+		padding: 33px 20px;
+	}
+
+	#title{
+  		line-height: 0;
+  		color: #000;
+	}
+
+	#title::after{
+		content: "Speed and Quality Software";
+		color: #fff;
+		font-size: 3vw;
+		line-height: initial;
+		display: block;
+		transform: translate(5vw, -3.57vh);
+	}
+
+	section.sec1 h1{
+		font-size: 9.5vw;
+		padding-top: 31vh;
+		padding-bottom: 1%;
+		margin: 0;
+	}
+
+	section.sec1 p{
+		font-size: 4vw;
+		width: 75%;
+		padding: 0px 12%;
+	}
+
+	section.content{
+		height: 90vh;
+	}
+
+	section.content h1{
+		font-size: 15vw;
+		padding-top: 250px;
+		margin: 0;
+	}
+
+	section.content ul{
+		list-style-position: inside;
+		font-size: 7vw;
+		text-align: left;
+		padding-left: 30%;
+	}
+
+}
+
+/* Big tablet */
+@media (min-width: 1024px) and (max-width: 1422px){
+	nav ul{
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: nowrap;
+	}
+	nav ul li a {
+		color: #fff;
+		padding: 1vh;
+		margin: 1vw;
+		font-size: 2.5vw;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	#title{
+  		line-height: 0;
+  		color: #000;
+	}
+
+	#title::after{
+		content: "SAQS - Speed and Quality Software";
+		color: #fff;
+		font-size: 2.7vw;
+		line-height: initial;
+		display: block;
+		transform: translate(-5%, -125%);
+	}
+
+	section.content{
+		height: 93vh;
+	}
+
+	section.content h1{
+		padding-top: 300px;
 	}
 }
