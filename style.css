@@ -221,8 +221,61 @@ section.content ul li a{
 	}
 }
 
-/* Small tablet */
-@media (min-width: 750px) and (max-width: 1024px) and (min-height: 1024px){
+/* Small tablet (portrait) */
+@media (min-width: 700px) and (max-width: 734px) and (min-height: 1024px){
+	nav{
+		padding: 33px 20px;
+		height: 10vh;
+	}
+
+	#title{
+  		line-height: 0;
+  		color: #000;
+	}
+
+	#title::after{
+		content: "Speed and Quality Software";
+		color: #fff;
+		font-size: 3vw;
+		line-height: initial;
+		display: block;
+		transform: translate(0vw, -5.3vh);
+	}
+
+	section.sec1 h1{
+		font-size: 9.5vw;
+		padding-top: 31vh;
+		padding-bottom: 1%;
+		margin: 0;
+	}
+
+	section.sec1 p{
+		font-size: 4vw;
+		width: 75%;
+		padding: 0px 12%;
+	}
+
+	section.content{
+		height: 90vh;
+	}
+
+	section.content h1{
+		font-size: 15vw;
+		padding-top: 250px;
+		margin: 0;
+	}
+
+	section.content ul{
+		list-style-position: inside;
+		font-size: 7vw;
+		text-align: left;
+		padding-left: 30%;
+	}
+
+}
+
+/* Medium tablet */
+@media (min-width: 734px) and (max-width: 1024px) and (min-height: 1024px){
 	nav{
 		padding: 33px 20px;
 		height: 10vh;
@@ -306,7 +359,7 @@ section.content ul li a{
 	}
 
 	section.sec1{
-		height: 88vh;
+		height: 92vh;
 	}
 
 	section.sec1 h1{
@@ -328,7 +381,7 @@ section.content ul li a{
 
 	section.content h1{
 		font-size: 12vw;
-		padding-top: 15vh;
+		padding-top: 23vh;
 	}
 
 	section.content ul{
