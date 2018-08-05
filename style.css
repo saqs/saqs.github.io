@@ -50,11 +50,28 @@ nav ul li a:hover{
 	border-radius: 6px;
 }
 
-section.sec1{
+section.quote{
 	width: 100%;
 	height: 100vh;
 	color: white;
 	background-image: url(bg.png);
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
+section.quote h1{
+	font-size: 7vw;
+	padding-top: 35vh;
+	padding-bottom: 1%;
+	margin: 0;
+}
+
+section.sec1{
+	width: 100%;
+	height: 100vh;
+	color: white;
+	background-color: #277c9c;
 	background-size: cover;
 	background-position: center;
 	text-align: center;
@@ -303,6 +320,10 @@ section.content ul li a{
 		transform: translate(0vw, -3.57vh);
 	}
 
+	section.quote h1{
+		padding-top: 40vh;
+	}
+
 	section.sec1 h1{
 		font-size: 9.5vw;
 		padding-top: 31vh;
@@ -364,10 +385,6 @@ section.content ul li a{
 		line-height: initial;
 		display: block;
 		transform: translate(-5%, -125%);
-	}
-
-	section.sec1{
-		height: 92vh;
 	}
 
 	section.sec1 h1{
