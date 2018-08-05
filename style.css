@@ -70,8 +70,8 @@ section.quote h1{
 section.sec1{
 	width: 100%;
 	height: 100vh;
-	color: white;
-	background-color: #277c9c;
+	color: black;
+	background-color: #ffd600;
 	background-size: cover;
 	background-position: center;
 	text-align: center;
@@ -93,8 +93,8 @@ section.sec1 p{
 section.content{
 	width: 100%;
 	height: 100vh;
-	color: black;
-	background-color: #ffd600;
+	color: white;
+	background-color: #277c9c;
 	background-size: cover;
 	background-position: center;
 	text-align: center;
@@ -115,7 +115,7 @@ section.content ul{
 }
 
 section.content ul li a{
-	color: #2993ff;
+	color: #5cf6db;
 	text-decoration: underline;
 }
 
@@ -164,20 +164,21 @@ section.content ul li a{
 		transform: translate(32%, -100%);
 	}
 
-	section.sec1{
+	section.quote{
 		height: 55vh;
-		color: white;
-		background-image: url(bg.png);
-		background-size: cover;
-		background-position: center;
-		text-align: center;
+	}
+
+	section.quote h1{
+		padding-top: 27vh;
+	}
+
+	section.sec1{
+		height: 45vh;
 	}
 
 	section.sec1 h1{
 		font-size: 10vw;
-		padding-top: 22vh;
-		padding-bottom: 1%;
-		margin: 0;
+		padding-top: 14vh;
 	}
 
 	section.sec1 p{
@@ -189,11 +190,6 @@ section.content ul li a{
 	section.content{
 		width: 100%;
 		height: 46vh;
-		color: black;
-		background-color: #ffd600;
-		background-size: cover;
-		background-position: center;
-		text-align: center;
 	}
 
 	section.content h1{
@@ -208,19 +204,30 @@ section.content ul li a{
 		text-align: left;
 		padding-left: 30%;
 	}
+}
 
-	section.content ul li a{
-		color: #2993ff;
-		text-decoration: underline;
+/* Landscape tablet */
+@media (min-width: 1000px) and (max-width: 1500px){
+	#title{
+		line-height: 0;
+		color: #000;
 	}
 
+	#title::after{
+		content: "Speed and Quality Software";
+		color: #fff;
+		font-size: 2.2vw;
+		line-height: initial;
+		display: block;
+		transform: translate(-2vw, -5vh);
+	}
 }
 
 /* XS phone */
 @media screen and (max-height: 570px){
 	#title::after{
-		font-size: 8px;
-		transform: translate(43%, -110%);
+		font-size: 4vw;
+		transform: translate(30%, -120%);
 	}
 }
 
@@ -233,22 +240,27 @@ section.content ul li a{
 }
 
 /* Big phone */
-@media (max-width: 420px) and (min-height: 800px){
+@media (max-width: 480px) and (min-height: 800px){
 	#title::after{
-		transform: translate(47%, -85%);
+		transform: translate(32%, -85%);
+	}
+
+	section.content h1{
+		padding-top: 13vh;
 	}
 
 
-/* Tall phone */
+/* Tall phone *//*
 @media (min-aspect-ratio: 1/2)){
 	#title::after{
 		transform: translate(43%, -95%);
 		font-size: 2vh;
 	}
 }
+*/
 
 /* Small tablet (portrait) */
-@media (min-width: 700px) and (max-width: 734px) and (min-height: 1024px){
+@media (min-width: 700px) and (max-width: 770px) or (max-height: 1024px){
 	nav{
 		padding: 33px 20px;
 		height: 10vh;
@@ -256,7 +268,7 @@ section.content ul li a{
 
 	#title{
   		line-height: 0;
-  		color: #000;
+  		color: #000; 		
 	}
 
 	#title::after{
@@ -301,7 +313,7 @@ section.content ul li a{
 }
 
 /* Medium tablet */
-@media (min-width: 734px) and (max-width: 1024px) and (min-height: 1024px){
+@media (min-width: 770px) and (max-width: 1024px) and (min-height: 700px){
 	nav{
 		padding: 33px 20px;
 		height: 10vh;
@@ -382,7 +394,7 @@ section.content ul li a{
 	#title::after{
 		content: "SAQS - Speed and Quality Software";
 		color: #fff;
-		font-size: 2.7vw;
+		font-size: 2.5vw;
 		line-height: initial;
 		display: block;
 		transform: translate(-5%, -125%);
@@ -417,7 +429,7 @@ section.content ul li a{
 }
 
 /* Big tablet 2 */
-@media (min-width: 1200px) and (max-width: 1380px){
+@media (min-width: 1200px) and (max-width: 1410px){
 	#title{
   		line-height: 0;
   		color: #000;
