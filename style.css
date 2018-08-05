@@ -121,7 +121,7 @@ section.content ul li a{
 		color: #000;
 		padding: 1vh;
 		margin: 2vw;
-		font-size: 2.8vw;
+		font-size: 2vw;
 		text-decoration: none;
 		text-transform: uppercase;
 	}
@@ -138,14 +138,13 @@ section.content ul li a{
 	#title{
   		line-height: 0;
 	}
-
 	#title::after{
 		content: "SAQS - Speed and Quality Software";
 		color: #fff;
 		font-size: 4.5vw;
 		line-height: initial;
 		display: block;
-		transform: translate(42%, -85%);
+		transform: translate(32%, -100%);
 	}
 
 	section.sec1{
@@ -203,6 +202,7 @@ section.content ul li a{
 /* XS phone */
 @media screen and (max-height: 570px){
 	#title::after{
+		font-size: 8px;
 		transform: translate(43%, -110%);
 	}
 }
@@ -210,7 +210,8 @@ section.content ul li a{
 /* Small phone */
 @media (min-height: 570px) and (max-height: 670px){
 	#title::after{
-		transform: translate(43%, -95%);
+		font-size: 4vw;
+		transform: translate(30%, -100%);
 	}
 }
 
@@ -219,10 +220,10 @@ section.content ul li a{
 	#title::after{
 		transform: translate(47%, -85%);
 	}
-}
+
 
 /* Tall phone */
-@media (max-width: 400px) and (min-height: 700px) and (max-height: 810px){
+@media (min-aspect-ratio: 1/2)){
 	#title::after{
 		transform: translate(43%, -95%);
 		font-size: 2vh;
